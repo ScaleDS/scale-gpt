@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "style-dictionary": "^3.8.0"
+  }
+}

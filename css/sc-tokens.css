@@ -1,0 +1,183 @@
+/* Scale.Tokens
+
+    Scale tokens - first export - 121122
+    ©Christopher Deane
+
+*/
+
+/* Light theme */
+
+:root {
+
+--sc-color-text-primary: #1A1A1A;
+--sc-color-text-secondary: #333333;
+--sc-color-text-tertiary: #666666;
+--sc-color-text-primary-inverse: #FFFFFF;
+--sc-color-text-secondary-inverse: #F2F2F2;
+--sc-color-text-tertiary-inverse: #E5E5E5;
+--sc-color-text-onbrand: #FFFFFF;
+--sc-color-text-link: #3355FF;
+--sc-color-text-link-hover: #1F349D;
+--sc-color-text-warning: #954E08;
+--sc-color-text-negative: #BA1515;
+--sc-color-text-positive: #007C29;
+--sc-color-button-primary: #3355FF;
+--sc-color-button-primary-hover: #2945CE;
+--sc-color-button-primary-pressed: #1F349D;
+--sc-color-button-secondary: #D0D8FF;
+--sc-color-button-secondary-hover: #A9B7FF;
+--sc-color-button-secondary-pressed: #8196FF;
+--sc-color-button-tertiary-hover: #D0D8FF;
+--sc-color-button-tertiary-pressed: #A9B7FF;
+--sc-color-icon-default: #1A1A1A;
+--sc-color-icon-selected: #3355FF;
+--sc-color-icon-disabled: #666666;
+--sc-color-icon-inverse: #FFFFFF;
+--sc-color-icon-onbrand: #FFFFFF;
+--sc-color-icon-brand: #3355FF;
+--sc-color-icon-info: #3355FF;
+--sc-color-icon-warning: #F27F0D;
+--sc-color-icon-negative: #E61A1A;
+--sc-color-icon-positive: #009933;
+--sc-color-border-default: #B3B3B3;
+--sc-color-border-focus: #3355FF;
+--sc-color-border-disabled: #B3B3B3;
+--sc-color-border-inverse: #FFFFFF;
+--sc-color-border-subtle: #F2F2F2;
+--sc-color-border-brand: #3355FF;
+--sc-color-border-warning: #F27F0D;
+--sc-color-border-negative: #E61A1A;
+--sc-color-border-positive: #009933;
+--sc-color-background-default: #FFFFFF;
+--sc-color-background-hover: #F2F2F2;
+--sc-color-background-selected: #F7F8FF;
+--sc-color-background-disabled: #E5E5E5;
+--sc-color-background-inverse: #1A1A1A;
+--sc-color-background-brand: #3355FF;
+--sc-color-background-subtle: #F2F2F2;
+--sc-color-background-transperant: #FFFFFF;
+--sc-color-background-info: #3355FF;
+--sc-color-background-warning: #F27F0D;
+--sc-color-background-negative: #E61A1A;
+--sc-color-background-positive: #009933;
+--sc-color-background-info-subtle: #F7F8FF;
+--sc-color-background-warning-subtle: #FEFAF5;
+--sc-color-background-negative-subtle: #FEF6F6;
+--sc-color-background-positive-subtle: #F5FBF7;
+--sc-color-background-system-static: #000000;
+--sc-color-surface-l0: #FFFFFF;
+--sc-color-surface-l1: #FFFFFF;
+--sc-color-surface-l2: #FFFFFF;
+--sc-color-surface-l3: #FFFFFF;
+--sc-color-surface-l4: #FFFFFF;
+--sc-color-surface-l5: #FFFFFF;
+--sc-color-surface-l6: #FFFFFF;
+--sc-color-overlay-30: #FFFFFF;
+--sc-color-overlay-30-inverse: #000000;
+--sc-color-overlay-70: #FFFFFF;
+--sc-color-overlay-70-inverse: #000000;
+
+}
+
+/* Dark theme */
+
+[data-theme="dark"] {
+
+--sc-color-text-primary: #FFFFFF;
+--sc-color-text-secondary: #E5E5E5;
+--sc-color-text-tertiary: #999999;
+--sc-color-text-primary-inverse: #0D0D0D;
+--sc-color-text-secondary-inverse: #1A1A1A;
+--sc-color-text-tertiary-inverse: #666666;
+--sc-color-text-onbrand: #0D0D0D;
+--sc-color-text-link: #5A76FF;
+--sc-color-text-link-hover: #8196FF;
+--sc-color-text-warning: #F27F0D;
+--sc-color-text-negative: #EB4646;
+--sc-color-text-positive: #31AD5A;
+--sc-color-button-primary: #5A76FF;
+--sc-color-button-primary-hover: #8196FF;
+--sc-color-button-primary-pressed: #A9B7FF;
+--sc-color-button-secondary: #4C4C4C;
+--sc-color-button-secondary-hover: #666666;
+--sc-color-button-secondary-pressed: #808080;
+--sc-color-button-text-hover: #4C4C4C;
+--sc-color-button-text-pressed: #666666;
+--sc-color-icon-default: #FFFFFF;
+--sc-color-icon-selected: #5A76FF;
+--sc-color-icon-disabled: #666666;
+--sc-color-icon-inverse: #1A1A1A;
+--sc-color-icon-onbrand: #0D0D0D;
+--sc-color-icon-brand: #5A76FF;
+--sc-color-icon-info: #5A76FF;
+--sc-color-icon-warning: #F27F0D;
+--sc-color-icon-negative: #EB4646;
+--sc-color-icon-positive: #31AD5A;
+--sc-color-border-default: #4C4C4C;
+--sc-color-border-focus: #5A76FF;
+--sc-color-border-disabled: #333333;
+--sc-color-border-inverse: #333333;
+--sc-color-border-subtle: #4C4C4C;
+--sc-color-border-brand: #5A76FF;
+--sc-color-border-warning: #F27F0D;
+--sc-color-border-negative: #EB4646;
+--sc-color-border-positive: #31AD5A;
+--sc-color-background-default: #262626;
+--sc-color-background-hover: #333333;
+--sc-color-background-selected: #0C133B;
+--sc-color-background-disabled: #1A1A1A;
+--sc-color-background-inverse: #FFFFFF;
+--sc-color-background-brand: #5A76FF;
+--sc-color-background-subtle: #4C4C4C;
+--sc-color-background-transperant: #FFFFFF;
+--sc-color-background-info: #5A76FF;
+--sc-color-background-warning: #F27F0D;
+--sc-color-background-negative: #EB4646;
+--sc-color-background-positive: #31AD5A;
+--sc-color-background-info-subtle: #0C133B;
+--sc-color-background-warning-subtle: #381D03;
+--sc-color-background-negative-subtle: #350606;
+--sc-color-background-positive-subtle: #00230C;
+--sc-color-background-system-static: #000000;
+--sc-color-surface-l0: #000000;
+--sc-color-surface-l1: #0D0D0D;
+--sc-color-surface-l2: #1A1A1A;
+--sc-color-surface-l3: #262626;
+--sc-color-surface-l4: #333333;
+--sc-color-surface-l5: #404040;
+--sc-color-surface-l6: #4C4C4C;
+--sc-color-overlay-30: #000000;
+--sc-color-overlay-30-inverse: #FFFFFF;
+--sc-color-overlay-70: #000000;
+--sc-color-overlay-70-inverse: #FFFFFF;
+
+}
+
+
+/* Text-size styles */
+--sc-text-title-x-l: 72px;
+--sc-text-title-l: 64px;
+--sc-text-title-m: 56px;
+--sc-text-title-s: 48px;
+--sc-text-heading-x-l: 40px;
+--sc-text-heading-l: 32px;
+--sc-text-heading-m: 24px;
+--sc-text-heading-s: 20px;
+--sc-text-heading-xs: 16px;
+--sc-text-heading-xxs: 14px;
+--sc-text-text-l: 16px;
+--sc-text-text-m: 14px;
+--sc-text-text-s: 12px;
+--sc-text-link-l: 16px;
+--sc-text-link-m: 14px;
+--sc-text-label-l: 16px;
+--sc-text-label-m: 14px;
+--sc-text-label-s: 12px;
+
+/* Effect styles */
+--sc-color-shadow-l1:  0px 6px 4px rgba(0, 0, 0, 0.08), 0px 0px 2px rgba(0, 0, 0, 0.08);
+--sc-color-shadow-l2:  0px 8px 8px rgba(0, 0, 0, 0.1), 0px 0px 4px rgba(0, 0, 0, 0.08);
+--sc-color-shadow-l3:  0px 10px 16px rgba(0, 0, 0, 0.1), 0px 0px 6px rgba(0, 0, 0, 0.08);
+--sc-color-shadow-l4:  0px 12px 20px rgba(0, 0, 0, 0.1), 0px 0px 8px rgba(0, 0, 0, 0.08);
+--sc-color-shadow-l5:  0px 14px 24px rgba(0, 0, 0, 0.1), 0px 0px 10px rgba(0, 0, 0, 0.08);
+--sc-color-shadow-l6:  0px 24px 40px rgba(0, 0, 0, 0.1), 0px 0px 12px rgba(0, 0, 0, 0.08);
