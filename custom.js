@@ -3,9 +3,9 @@ const fs = require('fs');
 const formatCssVariables = (dictionary) => {
   const tokens = dictionary.allTokens;
   const output = tokens.map((token) => {
-    const prefix = 'sc';
-    const path = token.path.join('-');
-    return `--${prefix}-${path}: ${token.value};`;
+    const prefix = '--sc';
+    const path = token.path.slice(1).join('-'); // Remove the "color" prefix
+    return `${prefix}-${path}: ${token.value};`;
   });
   return `:root {\n${output.join('\n')}\n}`;
 };
