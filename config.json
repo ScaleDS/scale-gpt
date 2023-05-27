@@ -6,8 +6,8 @@
       "buildPath": "css/",
       "files": [
         {
-          "destination": "tokens.css",
-          "format": "custom/css-variables"
+          "format": "css/variables",
+          "destination": "tokens.css"
         }
       ]
     }
